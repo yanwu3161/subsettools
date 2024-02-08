@@ -14,17 +14,17 @@ RDS file storage feature, enabled by default.
 Environment variable storage feature, disabled by default.
 # function
 This Package has an Function named FilterAndSavesubset_RDS
+```r
+FilterAndSavesubset_RDS(seurat_object = ,
 
-`<FilterAndSavesubset_RDS(
-                          seurat_object,
-
-                          filter_elements = "",
+                        filter_elements = "",
                         
-                          save_directory = "",
+                        save_directory = "",
                         
-                          save_RDS = TRUE,
+                        save_RDS = TRUE,
                         
-                         save_Enviroment = FALSE)>`
+                        save_Enviroment = FALSE)
+```
 # 
 *This R package is intended for educational and exchange purposes only.*
 #
