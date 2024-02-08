@@ -2,6 +2,11 @@
 An R packages for subsetting Seurat objects in batches.
 This R package is designed for efficiently subsetting Seurat objects in batches and saving them as RDS files
 and/or storing these subsets as new Seurat objects in the R environment.
+# Download
+you can install this package in R by this code
+```r
+install_github("https://github.com/yanwu3161/subsettools")
+```
 # seurat_object:
 The name of the Seurat object to be processed.
 # filter_elements: 
