@@ -13,6 +13,7 @@ RDS file storage feature, enabled by default.
 # save_Environment: 
 Environment variable storage feature, disabled by default.
 # function
+This Package has an Function named FilterAndSavesubset_RDS
 
   FilterAndSavesubset_RDS(
                           seurat_object,
