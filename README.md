@@ -14,9 +14,13 @@ RDS file storage feature, enabled by default.
 Environment variable storage feature, disabled by default.
 # sample
 FilterAndSavesubset_RDS(seurat_object,
+
                         filter_elements = "",
+                        
                         save_directory = "",
+                        
                         save_RDS = TRUE,
+                        
                         save_Enviroment = FALSE)
 # 
 This R package is intended for educational and exchange purposes only.
