@@ -14,7 +14,8 @@ RDS file storage feature, enabled by default.
 Environment variable storage feature, disabled by default.
 # sample
 
-FilterAndSavesubset_RDS(seurat_object,
+FilterAndSavesubset_RDS(
+                        seurat_object,
 
                         filter_elements = "",
                         
