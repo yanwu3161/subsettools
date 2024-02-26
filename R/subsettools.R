@@ -11,6 +11,8 @@
 #
 # This R package is intended for educational and exchange purposes only.
 #
+# Vision:v1.0.1
+#
 # Feel free to discussion, my email: Niceecake@outlook.com
 
 
@@ -18,7 +20,8 @@ FilterAndSavesubset_RDS <- function(seurat_object,
                                     filter_elements = "",
                                     save_directory = "",
                                     save_RDS = TRUE,
-                                    save_Enviroment = FALSE){
+                                    save_Enviroment = FALSE,
+                                    prefix = ""){
 
   subset_list <- list()
   unique_elements <- unique(seurat_object@meta.data[[filter_elements]])
@@ -29,7 +32,7 @@ FilterAndSavesubset_RDS <- function(seurat_object,
   if (save_RDS) {
     for (i in unique_elements) {
       subset_data <- seurat_object[, seurat_object@meta.data[[filter_elements]] == i]
-      subset_name <- paste0(filter_elements,"_", i, ".rds")
+      subset_name <- paste0(prefix,filter_elements,"_", i, ".rds")
       save_path <- file.path(save_directory, subset_name)
       saveRDS(subset_data, file = save_path)
       cat("This RDS file has saved to your path:", subset_name, ".\n")
