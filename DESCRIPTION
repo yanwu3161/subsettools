@@ -1,12 +1,11 @@
 Package: subsettools
 Type: Package
 Title: subsetting Seurat objects in batches.
-Version: 1.0
+Version: 1.0.1
 Author: Gao Yutong
 Maintainer: The package maintainer <Niceecake@outlook.com>
 Description: efficiently subsetting Seurat objects in batches and saving them as RDS files and/or storing these subsets as new Seurat objects in the R environment.
 License: Open Source
 Encoding: UTF-8
-RoxygenNote: 7.2.3
-NeedsCompilation: no
-Packaged: 2024-02-07 14:15:10 UTC; 26287
+LazyData: true
+
